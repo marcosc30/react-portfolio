@@ -5,7 +5,7 @@ import react from '@vitejs/plugin-react'
 export default defineConfig({
   // plugins: [react(), 'vite-plugin-react-svg'],
   plugins: [react()], 
-  base: '/react-vite/',
+  base: 'dist/',
   css: {
     modules: {
       localsConvention: 'camelCase'
