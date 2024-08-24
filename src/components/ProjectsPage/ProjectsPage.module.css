@@ -1,0 +1,62 @@
+.project1 {
+    margin-top: 10px;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: inline-block;
+    width: 100%;
+    text-align: left;
+    font-size: calc(1.5vw + 3px);
+}
+
+.project1_pic {
+    width: 50.33vw; 
+    height: 39.33vw; 
+    overflow: hidden; 
+    position: relative;
+    margin-left: 20px;
+    float: right;
+}
+
+.project1_pic img {
+    width: 100%; 
+    height: 100%; 
+    object-fit: cover; 
+    position: absolute; 
+    object-position: left;
+    top: 50%; 
+    left: 50%; 
+    transform: translate(-50%, -50%);
+}
+
+.project2 {
+    margin-top: 10px;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: inline-block;
+    width: 100%;
+    text-align: right;
+    font-size: calc(1.5vw + 3px);
+}
+
+.project2_pic {
+    width: 50.33vw; 
+    height: 39.33vw; 
+    overflow: hidden; 
+    position: relative;
+    float: left;
+}
+
+.project2_pic img {
+    width: 100%; 
+    height: 100%; 
+    object-fit: cover; 
+    position: absolute; 
+    object-position: left;
+    top: 50%; 
+    left: 50%; 
+    transform: translate(-50%, -50%);
+}
