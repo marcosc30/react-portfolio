@@ -5,7 +5,10 @@ import react from '@vitejs/plugin-react'
 export default defineConfig({
   // plugins: [react(), 'vite-plugin-react-svg'],
   plugins: [react()], 
-  base: 'dist/',
+  esbuild: {
+    jsxInject: `import React from 'react'`,  // Automatically import React where JSX is used
+    loader: 'jsx',  // Ensure the ESBuild loader knows to handle JSX syntax
+  },
   css: {
     modules: {
       localsConvention: 'camelCase'
