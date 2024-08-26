@@ -2,14 +2,17 @@
 <html>
   <head>
     <meta charset="UTF-8">
-    <meta http-equiv="refresh" content="0; url=/" />
-    <script>
-      // This script will redirect any unknown routes back to the root index.html
-      var path = window.location.pathname;
-      window.location.replace("/#" + path);
+    <script type="text/javascript">
+      // Redirects to index.html while preserving the route
+      var redirectTo = window.location.pathname;
+
+      // Check if the URL isn't already the base
+      if (redirectTo !== "/") {
+        window.location.href = "/" + "#" + redirectTo;
+      }
     </script>
   </head>
   <body>
-    <p>If you are not redirected automatically, follow this <a href="/">link</a>.</p>
+    <p>If you are not redirected automatically, follow this <a href="/">link to the homepage</a>.</p>
   </body>
 </html>
