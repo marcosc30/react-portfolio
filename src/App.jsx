@@ -16,11 +16,10 @@ import { QuadSievePage } from './components/ProjectPages/QuadSieve/QuadSievePage
 
 function App() {  
   return (
-    <div>
-      <div className={styles.App}>
-        <Navbar currentPath={location.pathname} />
-      </div>
       <Router>
+        <div className={styles.App}>
+          <Navbar/>
+        </div>
         <Routes>
           <Route path="/" element={<HomePage />} />
           <Route path="/about" element={<AboutPage />} />
@@ -35,7 +34,6 @@ function App() {
           <Route path="/projects/QuadSieve" element={<QuadSievePage />} />
         </Routes>
       </Router>
-    </div>
   );
 }
 

@@ -1,6 +1,7 @@
 import React, {useState} from 'react';
 import styles from './Navbar.module.css';
 import {getImageUrl} from '../../utils';
+import { Link } from 'react-router-dom';
 
 export const Navbar = () => {
     const [menuOpen, setMenuOpen] = useState(false);
@@ -18,11 +19,17 @@ export const Navbar = () => {
                 />
                 <ul className={`${styles.menuItems} ${menuOpen && styles.menuOpen}`}
                     onClick={() => setMenuOpen(false)}>
-                    <li><a href="/">Home</a></li>
-                    <li><a href="/about">About</a></li>
-                    <li><a href="/projects">Projects</a></li>
-                </ul>
-            </div>
+                    <li>
+                        <Link to="/">Home</Link>
+                    </li>
+                    <li>
+                        <Link to="/about">About</Link>
+                    </li>
+                    <li>
+                        <Link to="/projects">Projects</Link>
+                    </li>
+                            </ul>
+                        </div>
         </nav>
     );
 }

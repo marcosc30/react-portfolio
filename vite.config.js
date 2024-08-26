@@ -5,7 +5,6 @@ import react from '@vitejs/plugin-react'
 export default defineConfig({
   //plugins: [react(), '@vitejs/plugin-react-refresh'],
   plugins: [react()],
-  base: '/react-portfolio/',
   css: {
     modules: {
       localsConvention: 'camelCase'
