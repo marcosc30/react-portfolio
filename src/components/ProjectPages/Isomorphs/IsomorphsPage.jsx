@@ -11,7 +11,7 @@ export const IsomorphsPage = () => {
         <h1>Isomorphism Classes of S-Decorated Graphs</h1>
         <p className={styles.explanation}>This was a research project I did while taking Graph Theory (Math 1230). I don't usually publish these projects, but I loved the topic and ended up discovering a nifty algorithm that, to my knowledge, hadn't been published before on the topic. The implementation in Python is also included!</p>
         <div>
-          <a href="https://github.com/marcosc30/IsomorphismClassesofSDecoratedGraph">
+          <a href="https://github.com/marcosc30/S-Decorated-Isomorphism-Classes">
             <img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" alt="GitHub" width="50" height="50" />   
           </a>
         </div>

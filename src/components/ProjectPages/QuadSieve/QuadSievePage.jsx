@@ -9,9 +9,9 @@ export const QuadSievePage = () => {
         <img src={getImageUrl('pp/quadsieve.jpg')} alt="Quadratic Sieve Image" />
         </div>
         <h1>Quadratic Sieve</h1>
-        <p className={styles.explanation}>This was my final project for Cryptography (Math 1580), which was a more math-focused class; however, this project contains an extensive implementation that honestly took a lot longer than the research itself, so I recommend taking a look at it. It covers the quadratic sieve algorithm, which is an integer factorization algorithm. It fits a specific niche of being the fastest factorization algorithm for numbers too large for Pollard-Rho to be the fastest, but too small for the number field sieves to be the fastest.</p>
+        <p className={styles.explanation}>The quadratic sieve is an integer factorization algorithm commonly used for medium sized numbers less than 10<sup>100</sup> but greater than 10<sup>20</sup> or so. The algorithm is simpler than the Number Field Sieve, and the paper itself goes into conceptual detail explaining both how it works and other observations like the most commonly accepted runtime heuristic and situations when it is best used. </p>
         <div>
-          <a href="https://github.com/marcosc30/QuadraticSieve">
+          <a href="https://github.com/marcosc30/Quadratic-Sieve-Paper">
             <img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" alt="GitHub" width="50" height="50" />   
           </a>
         </div>
