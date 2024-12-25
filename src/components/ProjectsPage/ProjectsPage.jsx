@@ -32,6 +32,22 @@ export const ProjectsPage = () => {
             <Link to='/projects/dxmml'> Link to full project page</Link>
         </div>
         <div className={styles.project2}>
+            <div className={styles.project2_pic}>
+              <img src={getImageUrl('hp/TCPimg.png')} alt="Image" />
+            </div>
+            <h2>IP and TCP Implementation</h2>
+            <p>This is a project I did for my Networks class that involved building both the Networking and Transport layer within the networks abstraction.</p>
+            <Link to='/projects/IPnTCP'> Link to full project page</Link>
+        </div>
+        <div className={styles.project1}>
+            <div className={styles.project1_pic}>
+              <img src={getImageUrl('hp/BTscs.png')} alt="Image" />
+            </div>
+            <h2>BitTorrent Implementation</h2>
+            <p>This was my final project for networks, which involved implementing the BitTorrent file transfer protocol, as well as setting up a tracking server for establishing peer connections.</p>
+            <Link to='/projects/BitTorrent'> Link to full project page</Link>
+        </div>
+        <div className={styles.project2}>
           <div className={styles.project2_pic}>
                 <img src={getImageUrl('pp/era5.png')} alt="Image" />
             </div>

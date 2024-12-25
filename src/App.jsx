@@ -13,6 +13,8 @@ import {PWMPage} from './components/ProjectPages/PWM/PWMPage';
 import {BlockscapesPage} from './components/ProjectPages/Blockscapes/BlockscapesPage';
 import {IsomorphsPage} from './components/ProjectPages/Isomorphs/IsomorphsPage';
 import { QuadSievePage } from './components/ProjectPages/QuadSieve/QuadSievePage';
+import { BitTorrentPage } from './components/ProjectPages/BitTorrent/BitTorrentPage';
+import { IPnTCPPage } from './components/ProjectPages/IPnTCP/IPnTCPPage';
 
 function App() {  
   return (
@@ -32,6 +34,8 @@ function App() {
           <Route path="/projects/Blockscapes" element={<BlockscapesPage />} />
           <Route path="/projects/Isomorphisms" element={<IsomorphsPage />} />
           <Route path="/projects/QuadSieve" element={<QuadSievePage />} />
+          <Route path="/projects/BitTorrent" element={<BitTorrentPage />} />
+          <Route path="/projects/QuadSieve" element={<IPnTCPPage />} />
         </Routes>
       </Router>
   );
